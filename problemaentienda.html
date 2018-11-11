@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" />
+	<meta charset="UTF-8">
+	<title>Problemas en tienda</title>
+	<meta http-equiv="Pragma" content="no-cache">
+	<meta http-equiv="Expires" content="0">
+	<meta name="description" content="Cruce de series"/>
+    <meta name="keywords" content="" />
+	<meta property="og:title" content="" />
+    <meta property="og:url" content="" />
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta name="apple-mobile-web-app-capable" content="yes" /> 
+	<meta name="robots" content="index, follow" />
+	<link rel="author" type="text/plain" href="css/humans.txt" />
+	<link rel="icon" type="image/png" href="img/favicon.png?v=2">
+	<link rel="shortcut icon" href="img/favicon.png">
+	
+	<link rel="stylesheet" href="css/menurefacciones.css" />
+	<link rel="stylesheet" href="css/mano.css" />
+	<link rel="stylesheet" href="css/jquery-ui.css">
+	<link rel="stylesheet" href="css/modalbox.css">
+	<link rel="stylesheet" href="css/estilos_generales_adm.css">
+	<link rel="stylesheet" href="css/tablerodeconciliacion.css">
+	<link rel="stylesheet" href="css/datatables.min.css">
+</head>
+<body>
+	<header>
+		<div class="wrapper">
+			<div class="display_table">
+				<div class="logo display_tCell">
+					<div class="display_inline">
+							<img src="img/logo_italika.png"/>
+					</div><!-- /.display_inline -->
+				</div><!--
+			 --><div class="usuario display_tCell tRight">
+					<div class="display_inline">
+						<div>
+							<div class="menubotonprincipal" href="javascript:void(0)" onclick="openNav();openHand();">
+					        	<p><span class="hide">&#9776;</span></p>
+					    	</div>
+					    	<div id="menuprincipal_js" class="backgroundmenu">
+					        	<div class="cuadroprincipal">
+					           		<!--HAND SCROLL-->
+					           		<div id="contenedormano">
+					               		<i id="mano" class="fa fa-hand-pointer-o" aria-hidden="true"></i>
+					           		</div>
+					           		<div id="menuOpcionesContainer">
+             							<a class="menubotoncerrar" href="javascript:void(0)" onclick="closeNav();closeHand();">
+					             			&times;
+					             		</a>
+             							<div class="display_inline aliniar">
+											<div>
+												<div class="display_inline bandera">
+													<img src="img/italika_bandera_mexico.png"/>
+												</div>
+												<span class="nombre">
+													<span>Bienvenido </span> Luís
+												</span>
+											</div>
+										</div>
+					             		<a class="opcionesmenu separacionbotonmenu" href="problemaentienda.html">Problemas en tienda</a>
+					             		<a class="opcionesmenu" href="crucedeseries.html">Cruce de series</a>
+					             		<a class="opcionesmenu">Cerrar sesión</a>
+					           		</div>
+					        	</div>
+					    	</div>
+						</div>
+					</div>
+				</div>
+			</div><!-- .display_table -->
+		</div><!-- /.wrapper alado-->
+	</header><!-- /header -->
+	<section class="promociones contenido_principal">
+		<div class="wrapper">
+			<div class="borde">
+				<div class="contenedor">
+					<div id="perfil">
+		                <div id="pestanaperfil" onclick="despliega(0)">
+		                    <h3 class="tituloperfil">
+		                        <span class="flechita">&#10095;</span>
+		                        Filtros de problemas
+		                    </h3>
+		                </div>
+		                <form action="" class="formperfil">
+		                	<div class="config" >
+								<div class="display_table">
+									<div class="descripcion display_tCell">
+										<div class="display_inline buscarespacio">
+											<div class="divbusqueda">
+												<div class="display_inline divfiltro">
+													<span class="spaciospan2">Busqueda:</span>
+													<div class="display_inline inputsSearch">
+				                            			<div class="iconoInputSearch">
+				                                			<div class="filaIzquierdaInputSearch">
+				                                    			<label>
+		                                            				<i class="fa fa-search" aria-hidden=	"true"></i>
+				                                    			</label>
+				                                			</div>
+				                                			<div class="filaDerechaInputSearch">
+		                                   			 		<input class="txtDatosSearch" type="text"	 placeholder=""/>
+				                                			</div>
+				                            			</div>
+				                        			</div><!-- /.input -->
+				                        		</div>
+				                        		<div class="display_inline divfiltro">
+				                        			<span class="spaciospan3">Filtro:</span>
+				                        			<select class="combos">
+			                        					<option value="">filtrar por...</option>
+			                        					<option value="">Folio</option>
+			                        					<option value="">Tienda</option>
+			                        					<option value="">Estado</option>
+			                        					<option value="">Fecha</option>
+			                       			 		</select>
+			                       			 	</div>
+											</div>
+											<div class="display_inline filtrodebusqueda">
+												<div class="display_inline separadorcalendario divfiltro">
+													<span class="spaciospan">Fecha de inicio:</span>
+													<div class="display_inline separadorinput1">
+														<table class="textbox">
+															<tr>
+																<td class="icon"><label for="de"><i class="fa fa-calendar" aria-hidden="true"></i></label></td>
+																<td class="input"><input type="text" id="de" class="calendario"></td>
+															</tr>
+														</table>
+													</div><!-- /.display_inline -->
+												</div><!-- /.display_inline -->
+												<div class="display_inline divfiltro">
+													<span class="spaciospan">Fecha de fin:</span>
+													<div class="display_inline separadorinput2">
+														<table class="textbox">
+															<tr>
+																<td class="icon"><label for="hasta"><i class="fa fa-calendar" aria-hidden="true"></i></label></td>
+																<td class="input"><input type="text" id="hasta" class="calendario"></td>
+															</tr>
+														</table>
+													</div><!-- /.display_inline -->
+												</div><!-- /.display_inline -->
+											</div><!-- /.filtros -->
+
+											<div class="espaciobotonfiltrar">
+												<a rel="import" href="problemaentienda.html" class="btn terciario">Filtrar</a>
+											</div>
+										</div><!-- /.display_inline -->
+									</div>
+								</div>
+							</div>
+		                </form>
+		            </div>
+					<table class="tGeneral" id="example">
+						<thead class="responsive">
+							<tr class="responsive">
+								<th class="responsive">
+								Folio
+								</th>
+								<th class="responsive">
+								Tienda
+								</th>
+								<th class="responsive">
+								Estado
+								</th>
+								<th class="responsive">
+								Fecha
+								</th>
+								<th class="responsive">
+								Detalle
+								</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr class="responsive">
+								<td class="responsive">1092883930</td>
+								<td class="responsive">ITK Elektra 107 Av. Revolución</td>
+								<td class="responsive">SOLICITADO</td>
+								<td class="responsive">03/07/2018</td>
+								<td class="responsive vermas">
+									<a href="datos_problema.html">Ver detalle</a>
+								</td>
+							</tr>
+							<tr class="responsive">
+								<td class="responsive">1092883923</td>
+								<td class="responsive">ITK Elektra 7 Av. Monterrey</td>
+								<td class="responsive">CANCELADO</td>
+								<td class="responsive">18/05/2018</td>
+								<td class="responsive vermas">
+									<a href="datos_problema.html">Ver detalle</a>
+								</td>
+							</tr>
+							<tr class="responsive">
+								<td class="responsive">1321675</td>
+								<td class="responsive">Walmart Insurgentes</td>
+								<td class="responsive">SOLICITADO</td>
+								<td class="responsive">09/06/2018</td>
+								<td class="responsive vermas">
+									<a href="datos_problema.html">Ver detalle</a>
+								</td>
+							</tr>
+							<tr class="responsive">
+								<td class="responsive">11825</td>
+								<td class="responsive">Liverpool Ceilan</td>
+								<td class="responsive">CANCELADO</td>
+								<td class="responsive">10/07/2018</td>
+								<td class="responsive vermas">
+									<a href="datos_problema.html">Ver detalle</a>
+								</td>
+							</tr>
+							<tr class="responsive">
+								<td class="responsive">1092881777</td>
+								<td class="responsive">Walmart 1 Av. Insurgentes sur</td>
+								<td class="responsive">SOLICITADO</td>
+								<td class="responsive">01/06/2018</td>
+								<td class="responsive vermas">
+									<a href="datos_problema.html">Ver detalle</a>
+								</td>
+							</tr>
+							<tr class="responsive">
+								<td class="responsive">7671565923</td>
+								<td class="responsive">Liverpool Av. de las granjas</td>
+								<td class="responsive">CANCELADO</td>
+								<td class="responsive">1/06/2018</td>
+								<td class="responsive vermas">
+									<a href="datos_problema.html">Ver detalle</a>
+								</td>
+							</tr>
+							<tr class="responsive">
+								<td class="responsive">1092800292</td>
+								<td class="responsive">Liverpool Av. Rojo</td>
+								<td class="responsive">CANCELADO</td>
+								<td class="responsive">03/07/2018</td>
+								<td class="responsive vermas">
+									<a href="datos_problema.html">Ver detalle</a>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div><!-- contenedor -->
+			</div><!-- /.borde -->
+		</div><!-- /.wrapper -->
+	</section><!-- /section -->
+	<footer>
+		<div class="wrapper">
+			<p class="tCenter">ITK Elektra © 2018<br> Todos los derechos reservados. <a href="http://www.italika.mx/">www.italika.com</a></p>
+		</div><!-- /.wrapper -->
+	</footer><!-- /footer -->
+	<script src="js/jquery.min.js" type="text/javascript"></script>
+	<script src="js/modal.js" type="text/javascript"></script>
+	<script src="js/switchery.js" type="text/javascript"></script>
+	<script src="js/jquery-ui.js" type="text/javascript"></script>
+	<script src="js/jquery-ventana2.js" type="text/javascript"></script>
+	<script src="js/menu.js" type="text/javascript"></script>
+
+	<script src="js/datatables.min.js" type="text/javascript"></script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+    		$('#example').DataTable();
+		} );
+		$(document).ready(function(){
+			$('#check_all_a').click(function(){
+				var checkedStatus = this.checked;
+				$('ul.opc').find('li.a :checkbox').each(function() {
+					$(this).prop('checked', checkedStatus);
+				});
+				$('#lista').slideToggle();
+			});
+		});
+	</script>
+</body>
+</html>

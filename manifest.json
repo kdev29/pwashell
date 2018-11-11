@@ -1,0 +1,20 @@
+{
+    "name": "Italika PWA",
+    "short_name": "Italika PWA",
+    "display": "standalone",
+    "icons": [
+    {
+      "src": "/WebIncidencias/img/icons/italika-128.png",
+      "sizes": "128x128",
+      "type": "image/png"
+    },
+	{
+      "src": "/WebIncidencias/img/icons/italika-144.png",
+      "sizes": "144x144",
+      "type": "image/png"
+    }
+  ],
+    "background_color": "#243882",
+    "theme_color": "#243882",
+    "start_url": "index.html"
+}
