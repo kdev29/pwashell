@@ -1,0 +1,451 @@
+
+
+section.precios_lista div.modelos nav ul.level1 li.opc {
+	background: #FFFFFF;
+	padding: 12px 20px;
+	position: relative;
+	height: 39px;
+
+	-webkit-transition: all 0.5s linear;
+	-moz-transition: all 0.5s linear;
+	-ms-transition: all 0.5s linear;
+	-o-transition: all 0.5s linear;
+	transition: all 0.5s linear;
+}
+/*************/section.precios_lista div.modelos nav ul.level1 li.opc ul.level2 {/*************/
+	padding-top: 12px;
+	width: 100%;
+	max-width: 1240px;
+	display: none;
+	margin: auto;
+}
+section.precios_lista div.modelos nav ul.level1 li.opc i.mostrar_mod {
+	position: absolute;
+    margin-left: 48%;
+    margin-top: 30px;
+}
+section.precios_lista div.modelos nav ul.level1 li.opc:hover {
+	height: 80px;
+}
+section.precios_lista div.modelos nav ul.level1 li.opc:hover a.flechita{
+	color: transparent;
+}
+section.precios_lista div.modelos nav ul.level1 li.opc:hover ul.level2 {
+	display: block;
+}
+.display_tCell_inicio {
+	display: table-cell;
+	vertical-align: middle;
+	width: 400px;
+}
+.display_tCell_fin {
+	display: table-cell;
+	vertical-align: middle;
+	width: 1280px;
+	padding-top: 20px;
+	text-align: right;
+}
+select.comboboxinicio {
+	display: inline-block;
+	background: none;
+	width: 100%;
+	min-width: 200px;
+	height: 32px;
+	margin-left: 10px;
+	border: solid 1px #CCC;
+	color: #5F5F5F;
+	font-size: 1em;
+	font-family: 'Roboto-Regular';
+}
+select.comboboxtabla {
+	display: inline-block;
+	background: none;
+	width: 100%;
+	min-width: 200px;
+	height: 32px;
+	border: solid 1px #CCC;
+	color: #5F5F5F;
+	font-size: 1em;
+	font-family: 'Roboto-Regular';
+}
+.separadortabla{
+	margin-right: 5px;
+}
+.separadorcalendario{
+	width: 281px;
+	/*margin-left: 5px;*/
+	margin-right: 0px;
+}
+#ocupado{
+	color: #be5252;
+}
+.wrapper_saldos_tabla{
+	width: 100%;
+	min-width: 400px;
+	padding: 5px;
+	margin: 0;
+	/*background: pink;*/
+}
+section.promociones_saldos_tabla {
+	position: absolute;
+	display: inline-block;
+	padding: 5px;
+	width: 515px;
+
+	/*background: #000;*/
+}
+#graph{
+	display: inline-block;
+	/*background: green;*/
+	width: 496px;
+	height: 183px;
+	border: solid 1px #CCC;
+	padding: 8px;
+}
+.wrapper_saldos{
+	width: 100%;
+	min-width: 350px;
+	height: 235px;
+	padding: 5px;
+	margin: 0;
+	/*background: red;*/
+}
+section.promociones_saldos {
+	display: inline-block;
+	padding: 5px;
+	width: 360px;
+	height: 245px;
+	margin: 0;
+	/*background: orange;*/
+}
+.cuadros{
+	/*background: blue;*/
+	width: 100%;
+	max-width: 1240px;
+	margin: auto;
+	margin-top: 40px;
+}
+.textodatos{
+	margin-top: 40px;
+}
+.tamanoinputcuadro{
+	max-width: 222px !important;
+}
+label.textodatos span{
+	font-family: 'Roboto-bold';
+}
+.highcharts-credits{
+	display: none;
+}
+.highcharts-button-symbol{
+	display: none;
+}
+.highcharts-title{
+	font-size: 15px !important;
+}
+/*-----------------------------------
+--------------MEDIA Q ---------------
+------------------------------------*/
+@media (max-width: 1274px){
+	.separadortabla{
+	display: block;
+	margin-bottom: 15px;
+	}
+	.separadorcalendario{
+	margin-left: 5px;
+	margin-right: 2px;
+	}
+	section.promociones div.config div.descripcion table.textbox td.input input[type="text"] {
+	width: 100%;
+	}
+/*------------------------------------*/
+	.wrapper_saldos_tabla{
+	width: 100%;
+	min-width: 400px;
+	padding: 5px;
+	margin: 0;
+	}
+	section.promociones_saldos_tabla {
+	position: relative;
+	display: block;
+	width: 100%;
+	}
+	#graph{
+	display: inline-block;
+	width: 100%;
+	height: auto;
+	border: solid 1px #CCC;
+	padding: 0;
+	}
+	.wrapper_saldos{
+	width: 100%;
+	min-width: 10px;
+	height: 235px;
+	padding: 5px;
+	margin: 0;
+	}
+	section.promociones_saldos {
+	display: inline-block;
+	padding: 5px;
+	width: 49.7%;
+	height: 245px;
+	margin: auto;
+	}
+	.cuadros{
+	width: 100%;
+	max-width: 1240px;
+	margin: auto;
+	margin-top: 40px;
+	}
+	.textodatos{
+	margin-top: 40px;
+	}
+	.tamanoinputcuadro{
+	max-width: 65% !important;
+	}
+	.espacioizq{
+		margin-left: 26px;
+	}
+}
+@media (max-width: 950px){
+		tr.responsive2{
+		position: relative;
+	}
+	th.responsive2{
+		display: block;
+		padding:10px;
+		border: solid 1px #DDDDDD;
+	}
+	td.responsive2{
+		width: 100%;
+		text-align: left !important;
+		display: block;
+		padding:10px;
+		border: solid 1px #DDDDDD;
+	}
+	thead.responsive2{
+		display: none;
+	}
+td.responsive2:nth-of-type(1):before { font-family: 'Roboto-bold'; color: #30445D; padding-right: 92px; content: "Fecha de transacción: "; }
+td.responsive2:nth-of-type(2):before { font-family: 'Roboto-bold'; color: #30445D; padding-right: 123px; content: "Nº de referencia: "; }
+td.responsive2:nth-of-type(3):before { font-family: 'Roboto-bold'; color: #30445D; padding-right: 177px; content: "Usuario: "; }
+td.responsive2:nth-of-type(4):before { font-family: 'Roboto-bold'; color: #30445D; padding-right: 165px; content: "Concepto: "; }
+td.responsive2:nth-of-type(5):before { font-family: 'Roboto-bold'; color: #30445D; padding-right: 186px; content: "Monto: "; }
+td.responsive2:nth-of-type(6):before { font-family: 'Roboto-bold'; color: #30445D; padding-right: 140px; content: "Tipo de Saldo: "; }
+td.responsive2:nth-of-type(7):before { font-family: 'Roboto-bold'; color: #30445D; padding-right: 113px; content: "Tipo de Operación: "; }
+	
+	.display_tCell_inicio {
+	display: table-cell;
+	vertical-align: middle;
+	width: 50%;
+	}
+}
+@media (max-width: 775px){
+	.separadorcalendario{
+	width: 295px;
+	margin-left: 5px;
+	margin-bottom: 15px;
+	margin-right: 0px;
+	}
+	.separadorinput1{
+		margin-left: 10px;
+	}
+	.separadorinput2{
+		margin-left: 28px;
+	}
+	section.precios_lista div.modelos nav ul.level1 li.opc i.mostrar_mod {
+    margin-left: 47%;
+	}
+	section.precios_lista div.modelos nav ul.level1 li.opc ul.level2 {
+	padding-top: 0px;
+	}
+	section.precios_lista div.modelos nav ul.level1 li.opc:hover {
+	height: 180px;
+	}
+	.display_tCell_inicio {
+	display: block;
+	padding: 10px;
+	width: 100%;
+	}
+	.segundocombo{
+		margin-left: 32px;
+	}
+	select.comboboxinicio {
+	width: 100%;
+	min-width: 250px;
+	height: 32px;
+	margin-left: 10px;
+	border: solid 1px #CCC;
+	color: #5F5F5F;
+	font-size: 1em;
+	font-family: 'Roboto-Regular';
+	}
+	.btn.secundario {
+	width: 98%;
+	text-align: center;
+	display: inline-block;
+	color: #0078FF;
+	border: solid 1px #0078FF;
+	margin-left: 1%;
+	margin-right: 0;
+	}
+/*------------------------------------*/
+	section.promociones_saldos {
+	display: block;
+	padding: 5px;
+	width: 100%;
+	margin: auto;
+	}
+	.tamanoinputcuadro{
+	max-width: 77% !important;
+	}
+}
+@media (max-width: 631px){
+	section.promociones div.config div.descripcion table.textbox td.input input[type="text"] {
+		display: block;
+	width: 100%;
+	min-width: 	0px;
+	}
+}
+@media (max-width: 580px){
+	#graph{
+	display: inline-block;
+	width: 100%;
+	height: 300px;
+	border: solid 1px #CCC;
+	padding: 0;
+	}
+	.wrapper_saldos{
+	width: 100%;
+	min-width: 10px;
+	height: 265px;
+	padding: 5px;
+	margin: 0;
+	}
+	section.promociones_saldos {
+	display: inline-block;
+	padding: 5px;
+	width: 100%;
+	height: 275px;
+	margin: auto;
+	}
+	.cuadros{
+	width: 100%;
+	max-width: 1240px;
+	margin: auto;
+	margin-top: 20px;
+	}
+	.espacioizq{
+		margin-left: 0px;
+	}
+td.responsive2:nth-of-type(1):before { padding-right: 52px;}
+td.responsive2:nth-of-type(2):before { padding-right: 83px;}
+td.responsive2:nth-of-type(3):before { padding-right: 137px;}
+td.responsive2:nth-of-type(4):before { padding-right: 125px;}
+td.responsive2:nth-of-type(5):before { padding-right: 146px;}
+td.responsive2:nth-of-type(6):before { padding-right: 100px;}
+td.responsive2:nth-of-type(7):before { padding-right: 73px;}
+}
+@media (max-width: 426px){
+	section.precios_lista div.modelos nav ul.level1 li.opc i.mostrar_mod {
+    margin-left: 44%;
+	}
+	.segundocombo{
+		margin-left: 32px;
+	}
+	select.comboboxinicio {
+	width: 180px;
+	min-width: 0;
+	height: 32px;
+	margin-left: 10px;
+	border: solid 1px #CCC;
+	color: #5F5F5F;
+	font-size: 1em;
+	font-family: 'Roboto-Regular';
+	}
+	.btn.secundario {
+	width: 98%;
+	text-align: center;
+	display: inline-block;
+	color: #0078FF;
+	border: solid 1px #0078FF;
+	margin-left: 1%;
+	margin-right: 0;
+	}
+	.btn.terciario {
+	color: #26a363;
+	border: solid 1px #26a363;
+	margin-bottom: 20px;
+	}
+/*------------------------------------*/
+	.wrapper_saldos_tabla{
+		display: none;
+	}
+	section.promociones_saldos_tabla {
+	display: none;
+	}
+	#graph{
+	display: none;
+	}
+}
+@media (max-width: 480px){
+td.responsive2:nth-of-type(1):before { padding-right: 12px;}
+td.responsive2:nth-of-type(2):before { padding-right: 43px;}
+td.responsive2:nth-of-type(3):before { padding-right: 97px;}
+td.responsive2:nth-of-type(4):before { padding-right: 85px;}
+td.responsive2:nth-of-type(5):before { padding-right: 106px;}
+td.responsive2:nth-of-type(6):before { padding-right: 60px;}
+td.responsive2:nth-of-type(7):before { padding-right: 33px;}
+}
+@media (max-width: 371px){
+
+}
+@media (max-width: 374px){
+	section.promociones div.config div.descripcion table.textbox td.input input[type="text"] {
+	display: block;
+	width: 100%;
+	min-width: 	209px;
+	}
+	.separadorcalendario{
+	width: 240px;
+	margin-left: 5px;
+	margin-bottom: 15px;
+	margin-right: 0px;
+	}
+	.separadorinput1{
+		margin-top: 10px;
+		margin-left: 0px;
+	}
+	.separadorinput2{
+		margin-top: 10px;
+		margin-left: 0px;
+	}
+}
+@media (max-width: 346px){
+	section.precios_lista div.modelos nav ul.level1 li.opc:hover {
+	height: 240px;
+	}
+	.segundocombo{
+		margin-left: 0px;
+	}
+	select.comboboxinicio {
+/*	background: orange;*/
+	width: 230px;
+	height: 32px;
+	margin-top: 10px;
+	margin-left: 0;
+	border: solid 1px #CCC;
+	color: #5F5F5F;
+	font-size: 1em;
+	font-family: 'Roboto-Regular';
+	}
+	.btn.secundario {
+	width: 97%;
+	text-align: center;
+	display: inline-block;
+	color: #0078FF;
+	border: solid 1px #0078FF;
+	margin-left: 1%;
+	margin-right: 0;
+	}
+}

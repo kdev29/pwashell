@@ -1,0 +1,293 @@
+*{
+	font-family: "roboto", helvetica, arial;
+	font-weight: normal;
+	border: 0;
+	margin: 0;
+	padding: 0;
+}
+input::-ms-clear {
+width: 0px;
+height: 0px;
+}  
+article,figcaption,figure,footer,header,hgroup,nav,section {
+	display: block;
+}
+@font-face {
+    font-family: 'roboto';
+    src: url('../fonts/roboto-regular-webfont.eot');
+    src: url('../fonts/roboto-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/roboto-regular-webfont.woff2') format('woff2'),
+         url('../fonts/roboto-regular-webfont.woff') format('woff'),
+         url('../fonts/roboto-regular-webfont.ttf') format('truetype'),
+         url('../fonts/roboto-regular-webfont.svg#pecitabook') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+img{
+	max-width: 100%;
+	width: 100%;
+	height: 100%;
+}
+ul{
+	list-style: none;
+}
+body {
+    font-family: "Lato", sans-serif;
+}
+/**********************************************/
+/**********************************************/
+.menubotonprincipal{
+	cursor: pointer;
+    position: relative;
+    display: inline-block;
+    font-family: "Lato", sans-serif;
+    font-size: 25px;
+    text-align: center;
+    color: #fff;
+    width: 40px;
+    height: 39px;
+    line-height: 37px;
+    border-radius: 10px;
+    -webkit-transition: background 0.5s;
+    transition: background 0.5s;
+    z-index: 1;
+}
+.menubotonprincipal:hover{
+	background: #053d6b;
+}
+/**********************************************/
+.backgroundmenu {
+	background: rgba(0, 0, 0, 12);
+	background: -webkit-linear-gradient(-90deg, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0)); 
+	background: -o-linear-gradient(-90deg, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0));
+	background: -moz-linear-gradient(-90deg, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0)); 
+	background: linear-gradient(-90deg, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0));
+/*	cursor: pointer;*/
+    position: fixed;
+    height: 100%;
+    width: 0px;
+    top: 0px;
+    right: 0px;
+    overflow-x: hidden;
+    transition: 0.2s;
+    z-index: 102;
+}
+.cuadroprincipal{
+	cursor: default;
+    position: absolute;
+    width: 320px;
+    height: 100%;
+    right: 0;
+    background: #fff;
+    overflow-y: auto;
+    overflow-x: hidden;
+    z-index: 103;
+}
+.menubotoncerrar {
+	cursor: pointer;
+    display: block;
+    position: relative;
+    width: 20px;
+    height: 30px;
+    margin-top: 8px;
+    margin-left: 17px;
+    font-size: 40px;
+    text-decoration: none;
+    color: silver;
+    z-index: 104;
+}
+.menubotoncerrar:hover{
+    color: #ccc;
+}
+/*AGREGADO*/
+.carrito{
+	position: relative;
+	display: block;
+	text-align: center;
+	margin:-15px auto 20px auto;
+}
+.contenedorimgcarrito{
+	position: relative;
+	display: block;
+	width: 105px;
+	height: 105px;
+	margin: 0 auto;
+}
+/*-------------------*/
+.imgcarritorefaccion{
+	cursor: pointer;
+	margin-bottom: 0;
+	margin-top: 13%;
+	width: 75px;
+	height: 75px;
+}
+.nuemerodecarrito{
+	background: red;
+	border-radius: 100px;
+	position: absolute;
+	padding: 8px;
+	line-height: 7px;
+	top: 69px;
+	right: 14px;
+	color: #fff;
+	text-align: center;
+	font-size: 12px;
+}
+.tucarritoestavacio{
+	color: #777;
+	font-size: 14px;
+	margin-left:auto;
+	margin-right:auto;
+}
+/**********************************************/
+.cuadrossucursales{
+	position: relative;
+	background: #fff;
+	display: block;
+	text-align: left;
+    font-size: 15px;
+    text-decoration: none;
+	color: #777;
+	margin:2px auto;
+    border: 2px solid #333;
+	padding: 10px 10px 10px 15px;
+    width: 99%;
+    box-sizing:border-box;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+}
+.cuadrossucursales:hover{
+	color: #00529b;
+}
+.iconosucursal{
+	display: block;
+	padding: 11px 11px 0 0;
+	width: 50px;
+	height: 50px;
+}
+.informacionsucursal{
+	position: relative;
+	display: block;
+	width: 60%;
+	height: 1%;
+	top:-43px;	
+	left: 60px;
+	margin-bottom: -7%;
+}
+/**********************************************/
+.switch{
+	position: absolute;
+	top:48px;
+	right:57px;
+	display: block;
+}
+.cmn-toggle {/*básico*/
+  position: absolute;
+  visibility: hidden;
+}
+.cmn-toggle + label {
+  margin-top: -15px;
+  margin-left: 25%;
+  display: block;
+  position: relative;
+  cursor: pointer;
+  outline: none;
+  user-select: none;
+}/*basico*/
+/**********************************************/
+input.cmn-toggle-round + label {
+	position: absolute;
+	padding: 2px;
+	width: 45px;
+	height: 25px;
+	background-color: #dddddd;
+	border-radius: 60px;
+}
+input.cmn-toggle-round + label:before,
+input.cmn-toggle-round + label:after {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 1px;
+  bottom: 1px;
+  content: "";
+}
+input.cmn-toggle-round + label:before {
+  right: 1px;
+  background-color: #aaa;
+  border-radius: 15px;
+  transition: background 0.4s;
+}
+input.cmn-toggle-round + label:after {
+  width: 28px;
+  height: 28px;
+  background-color: #fff;
+  border-radius: 100%;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  transition: margin 0.4s;
+}
+input.cmn-toggle-round:checked + label:before {
+  background-color: #005498;
+}
+input.cmn-toggle-round:checked + label:after {
+  margin-left: 20px;
+}
+/**********************************************/
+.opcionesmenu, .opcionmenupermiso{
+	cursor: pointer;
+    display: block;
+    position: static;
+    background: #fff;
+    border: 1px solid silver;
+    width: 99%;
+    height: 40px;
+    color: #0b5eab;
+    text-align: center;
+    font-size: 14px;
+    text-decoration: none;
+    line-height: 40px;
+    margin: 3px auto;
+    transition: 0.5s;
+}
+.opcionesmenu:hover{
+	color: #fff;
+	background: #0b5eab;
+}
+.separacionbotonmenu{
+  background: #00284d;
+  color: #fff;
+}
+.opcionmenupermiso{
+	background: #f01c52;
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+.opcionmenupermiso:hover{
+	font-size: 20px;
+	color: #f01c52;
+	background: #fff;
+}
+/**********************************************/
+/**********************************************/
+a{
+	text-decoration: none;
+}
+a{
+	color: #b2b2b2;
+   	text-decoration: none;
+}
+a#author:visited {
+	color: #b2b2b2;
+	text-decoration: none;
+}
+a#author:hover {
+	color: #003366;
+   	text-decoration: underline;
+}
+a#author:active {
+	color: #003366;
+   	text-decoration: underline;
+}
+/**********************************************/
+/**********************************************/
+/**********************************************/

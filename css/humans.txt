@@ -1,0 +1,33 @@
+﻿/* Titulo - (dominio) http://crucedeseries*/
+
+/* TEAM */
+	Creator: SISTEMAS ITALIKA
+
+	Layout maker:	Veloz Gonzalez Hugo Cesar
+
+	Design:	Veloz Gonzalez Hugo Cesar
+
+	WIREFRAME:	Veloz Gonzalez Hugo Cesar
+
+	MOCKUP:	Veloz Gonzalez Hugo Cesar
+
+	tables:	Veloz Gonzalez Hugo Cesar
+
+	Coordinator:	Martin Marroquin
+					
+	Front:	Varinia Esparza Padilla
+			
+
+	Contact: hveloz@italika.com
+	From: México city, México
+	
+	
+/* Spring_1 */
+	Last update: 2018/08/2
+	Update: 2018/07/30
+	Language: Español
+	Standars: HTML5, CSS3, JAVASCRIPT
+	Components: JQUERY
+	Software: SublimeText2, Notepad++, Adobe Suite CC (photoshop, illustrator, dreamweaver)
+	Mock-up Creation: 2018/07/16
+	Mock-up: 2018/07/9

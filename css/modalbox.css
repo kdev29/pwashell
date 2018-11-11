@@ -1,0 +1,126 @@
+div#lista_generada {
+	display: none;
+}
+div.blur.active {
+	-webkit-filter: blur(5px);
+	-moz-filter: blur(5px);
+	-o-filter: blur(5px);
+	filter: blur(5px);
+}
+div.modalbox {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	color: #FFFFFF;
+	background: rgba(3, 5, 16, 0.85);
+	z-index: 10;
+}
+div.modalbox div.wrapper {
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+div.modalbox div.wrapper div.mensaje {
+	position: absolute;
+	width: 95%;
+	max-width: 500px;
+	height: 200px;
+	background: #FFFFFF;
+	color: #5F5F5F;
+	left: 0; right: 0;
+	top: 0; bottom: 0;
+	margin: auto;
+	font-family: 'Roboto-Regular';
+	font-size: 0.875em;
+	line-height: 1.2857142857;
+} 
+div#status_firma.modalbox div.mensaje{
+	max-width: 750px;
+	height: 485px;
+}
+div#agencias.modalbox div.mensaje{
+	max-width: 850px;
+	height: 445px;
+}
+div.modalbox div.wrapper div.mensaje div.titulo h2 {
+	position: relative;
+	/*background-image: -webkit-linear-gradient(top,#f5f5f5 0,#e8e8e8 100%);
+    background-image: -o-linear-gradient(top,#f5f5f5 0,#e8e8e8 100%);
+    background-image: -webkit-gradient(linear,left top,left bottom,from(#f5f5f5),to(#e8e8e8));
+    background-image: linear-gradient(to bottom,#f5f5f5 0,#e8e8e8 100%);*/
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fff5f5f5', endColorstr='#ffe8e8e8', GradientType=0);
+    background-repeat: repeat-x;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+	z-index: 1000;
+	font-size: 1.125em;
+	position: relative;
+}
+div.modalbox div.wrapper div.mensaje div.titulo h2 span.close {
+	display: inline-block;
+	position: absolute;
+	top: 0; right: 0;
+	font-size: 1.125em;
+	cursor: pointer;
+	z-index: 11;
+}
+div.modalbox div.wrapper div.mensaje div.cuerpo {
+	padding: 20px;
+}
+div.modalbox div.wrapper div.mensaje div.cuerpo table.msg {
+	width: 100%;
+}
+div.modalbox div.wrapper div.mensaje div.cuerpo table.msg td {
+	vertical-align: middle;
+	text-align: justify;
+}
+div.modalbox div.wrapper div.mensaje div.cuerpo table.msg td p {
+	margin-bottom: 10px;
+}
+div.modalbox div.wrapper div.mensaje div.cuerpo table.msg td img {
+	width: 80px;
+	height: 80px;
+	margin-right: 10px;
+}
+div.modalbox div.wrapper div.mensaje div.cuerpo div.contenedor {
+	padding: 10px 15px;
+}
+div.modalbox div.wrapper div.mensaje div.cuerpo h3 {
+	position: relative;
+	font-size: 1.125em;
+	/*padding-bottom: 10px;*/
+	cursor: pointer;
+}
+div.modalbox div.wrapper div.mensaje div.cuerpo h3 i {
+	display: inline-block;
+	position: absolute;
+	top: 0; right: 0;
+	font-size: 1.5em;
+	color: #868686;
+}
+div.modalbox div.wrapper div.mensaje div.cuerpo table.tGeneral {
+	font-size: 1em;
+}
+div.modalbox div.wrapper div.mensaje div.cuerpo ul.opc {
+	display: none;
+	padding: 5px 20px 0;
+	height: 268px;
+	overflow-y: auto;
+}
+div.modalbox div.wrapper div.mensaje div.cuerpo ul.opc li {
+	padding: 6px 0;
+	color: #868686;
+	border-bottom: solid 1px #DDDDDD;
+}
+div.modalbox div.wrapper div.mensaje div.cuerpo ul.opc li:last-child {
+	border-bottom: 0;
+}
+div.modalbox div.wrapper div.mensaje div.btnsBar {
+	margin-top: 15px;
+}
+div.modalbox div.wrapper div.mensaje div.botones {
+	padding: 0 20px;
+}
+.enfasis {
+	font-size: 1.7142857143em;
+}
