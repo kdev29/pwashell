@@ -157,6 +157,12 @@ window.addEventListener('beforeinstallprompt', (e) => {
       deferredPrompt = null;
     });
 });
+
+
+window.addEventListener('appinstalled', (evt) => {
+  alert('app instalada OK');
+});
+
 	</script>
 </body>
 </html>
