@@ -1,25 +1,25 @@
 
 var CACHE_NAME = 'my-site-cache-v1';
 var urlsToCache = [
-  '/WebIncidencias/logo_italika1.png',
-  '/WebIncidencias/img/logo_italika.png',
-  '/WebIncidencias/index.html',
-  '/WebIncidencias/css/estilos_generales_adm.css',
-  '/WebIncidencias/css/reset.css',
-  '/WebIncidencias/css/menurefacciones.css',
-  '/WebIncidencias/css/mano.css',  
-  '/WebIncidencias/css/tablerodeconciliacion.css',  
-  '/WebIncidencias/css/jquery-ui.css',  
-  '/WebIncidencias/css/modalbox.css',  
-  '/WebIncidencias/css/datatables.min.css',  
-  '/WebIncidencias/css/font-roboto.css',  
-  '/WebIncidencias/css/font-awesome.css',  
-  '/WebIncidencias/js/menu.js', 
-  '/WebIncidencias/js/datatables.min.js' ,
-  '/WebIncidencias/js/jquery-ui.js' ,
-  '/WebIncidencias/js/jquery-ventana2.js' ,
-  '/WebIncidencias/js/jquery.min.js',
-  '/WebIncidencias/img/italika_bandera_mexico.png'
+  '/logo_italika1.png',
+  '/img/logo_italika.png',
+  '/index.html',
+  '/css/estilos_generales_adm.css',
+  '/css/reset.css',
+  '/css/menurefacciones.css',
+  '/css/mano.css',  
+  '/css/tablerodeconciliacion.css',  
+  '/css/jquery-ui.css',  
+  '/css/modalbox.css',  
+  '/css/datatables.min.css',  
+  '/css/font-roboto.css',  
+  '/css/font-awesome.css',  
+  '/js/menu.js', 
+  '/js/datatables.min.js' ,
+  '/js/jquery-ui.js' ,
+  '/js/jquery-ventana2.js' ,
+  '/js/jquery.min.js',
+  '/img/italika_bandera_mexico.png'
 ];
 
 self.addEventListener('install', function(event){
