@@ -1,25 +1,7 @@
 
 var CACHE_NAME = 'my-site-cache-v1';
 var urlsToCache = [
-  '/pwashell/logo_italika1.png',
-  '/pwashell/img/logo_italika.png',
-  '/pwashell/index.html',
-  '/pwashell/css/estilos_generales_adm.css',
-  '/pwashell/css/reset.css',
-  '/pwashell/css/menurefacciones.css',
-  '/pwashell/css/mano.css',  
-  '/pwashell/css/tablerodeconciliacion.css',  
-  '/pwashell/css/jquery-ui.css',  
-  '/pwashell/css/modalbox.css',  
-  '/pwashell/css/datatables.min.css',  
-  '/pwashell/css/font-roboto.css',  
-  '/pwashell/css/font-awesome.css',  
-  '/pwashell/js/menu.js', 
-  '/pwashell/js/datatables.min.js' ,
-  '/pwashell/js/jquery-ui.js' ,
-  '/pwashell/js/jquery-ventana2.js' ,
-  '/pwashell/js/jquery.min.js',
-  '/pwashell/img/italika_bandera_mexico.png'
+
 ];
 
 self.addEventListener('install', function(event){
