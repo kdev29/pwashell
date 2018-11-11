@@ -1,25 +1,25 @@
 
 var CACHE_NAME = 'my-site-cache-v1';
 var urlsToCache = [
-  '/logo_italika1.png',
-  '/img/logo_italika.png',
-  '/index.html',
-  '/css/estilos_generales_adm.css',
-  '/css/reset.css',
-  '/css/menurefacciones.css',
-  '/css/mano.css',  
-  '/css/tablerodeconciliacion.css',  
-  '/css/jquery-ui.css',  
-  '/css/modalbox.css',  
-  '/css/datatables.min.css',  
-  '/css/font-roboto.css',  
-  '/css/font-awesome.css',  
-  '/js/menu.js', 
-  '/js/datatables.min.js' ,
-  '/js/jquery-ui.js' ,
-  '/js/jquery-ventana2.js' ,
-  '/js/jquery.min.js',
-  '/img/italika_bandera_mexico.png'
+  '/pwashell/logo_italika1.png',
+  '/pwashell/img/logo_italika.png',
+  '/pwashell/index.html',
+  '/pwashell/css/estilos_generales_adm.css',
+  '/pwashell/css/reset.css',
+  '/pwashell/css/menurefacciones.css',
+  '/pwashell/css/mano.css',  
+  '/pwashell/css/tablerodeconciliacion.css',  
+  '/pwashell/css/jquery-ui.css',  
+  '/pwashell/css/modalbox.css',  
+  '/pwashell/css/datatables.min.css',  
+  '/pwashell/css/font-roboto.css',  
+  '/pwashell/css/font-awesome.css',  
+  '/pwashell/js/menu.js', 
+  '/pwashell/js/datatables.min.js' ,
+  '/pwashell/js/jquery-ui.js' ,
+  '/pwashell/js/jquery-ventana2.js' ,
+  '/pwashell/js/jquery.min.js',
+  '/pwashell/img/italika_bandera_mexico.png'
 ];
 
 self.addEventListener('install', function(event){
