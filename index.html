@@ -40,7 +40,7 @@
 			<div class="display_table">
 				<div class="logo display_tCell">
 					<div class="display_inline">
-							<img src="img/logo_italika.png"/>
+							<img src="img/logo_italika.png" alt="logo"/>
 					</div><!-- /.display_inline -->
 				</div><!--
 			 --><div class="usuario display_tCell tRight">
@@ -62,7 +62,7 @@
              							<div class="display_inline aliniar">
 											<div>
 												<div class="display_inline bandera">
-													<img src="img/italika_bandera_mexico.png"/>
+													<img src="img/italika_bandera_mexico.png" alt="pais"/>
 												</div>
 												<span class="nombre">
 													<span>Bienvenido </span> Luís
@@ -87,6 +87,11 @@
 			<div class="borde">
 				<div class="contenedor">
 					<button id="btnAdd">Add to home</button>
+					<button onclick="loadAPI()">Fetch</button>
+					<button onclick="limpia()">Limpia</button>
+					<div>
+						<ul id='list'></ul>
+					</div>
 				</div>
 			</div><!-- /.borde -->
 		</div><!-- /.wrapper -->
@@ -167,6 +172,57 @@ window.addEventListener('beforeinstallprompt', (e) => {
 window.addEventListener('appinstalled', (evt) => {
 //   alert('app instalada OK');
 });
+
+function limpia(){
+	$('#list').empty();
+}
+
+function llenaDatos(array){
+	console.log('en array');
+	limpia();
+
+	for (let index = 0; index < array.length; index++) {
+			const element = array[index];
+			var row = '<li>' + element.first_name + '</li>';
+			$('#list').append(row);
+		}	
+}
+
+function loadAPI(){
+
+	 var url = 'https://reqres.in/api/users?page=2';
+		
+	 if ('caches' in window) {
+      /*
+       * Check if the service worker has already cached this city's weather
+       * data. If the service worker has the data, then display the cached
+       * data while the app fetches the latest data.
+       */
+      caches.match(url).then(function(response) {
+        if (response) {
+          response.json().then(function updateFromCache(json) {
+            // var results = json.query.results;
+            // results.key = key;
+            // results.label = label;
+            // results.created = json.query.created;
+            llenaDatos(json.data);
+          });
+        }
+      });
+	}
+	
+	$.ajax({
+    url: "https://reqres.in/api/users?page=2",
+    type: "GET",
+    success: function(response){
+		console.log(response);
+		
+		llenaDatos(response.data);
+		
+    }
+});
+	
+}
 
 	</script>
 </body>
