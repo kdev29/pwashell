@@ -42,5 +42,5 @@ self.addEventListener('notificationclick', function(event){
     console.log('[Service Worker] Notification click Received.');
     console.log(event.notification);
     event.notification.close();
-    event.waitUntil(clients.openWindow('https://developers.google.com/web/'));
+    event.waitUntil(clients.openWindow('https://hobbygastos.tk/index.html'));
 });
